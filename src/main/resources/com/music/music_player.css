@@ -1,0 +1,135 @@
+.player-scroll {
+    -fx-background: #f4eee6;
+    -fx-background-color: #f4eee6;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-font-family: "System";
+    -fx-font-size: 14px;
+}
+
+.player-scroll > .viewport {
+    -fx-background-color: #f4eee6;
+}
+
+.player-background {
+    -fx-background-color: #f4eee6;
+    -fx-padding: 24;
+}
+
+/* Main card */
+.player-card {
+    -fx-background-color: #fffdf9;
+    -fx-background-radius: 22;
+    -fx-border-color: #e6dacc;
+    -fx-border-radius: 22;
+    -fx-border-width: 1;
+    -fx-padding: 26 22 24 22;
+    -fx-effect: dropshadow(gaussian, rgba(37, 57, 54, 0.10), 18, 0.05, 0, 5);
+}
+
+/* Headings and song details */
+.eyebrow {
+    -fx-text-fill: #a44b34;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.page-title {
+    -fx-text-fill: #193d39;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.song-title {
+    -fx-text-fill: #193d39;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.artist-name {
+    -fx-text-fill: #385a54;
+    -fx-font-size: 16px;
+    -fx-text-alignment: center;
+}
+
+.album-name {
+    -fx-text-fill: #706e65;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+}
+
+/* Album artwork frame */
+.artwork-frame {
+    -fx-background-color: #eee5d9;
+    -fx-background-radius: 14;
+    -fx-border-color: #e1d4c4;
+    -fx-border-radius: 14;
+    -fx-padding: 14;
+}
+
+.artwork-status {
+    -fx-text-fill: #786452;
+    -fx-font-size: 11px;
+    -fx-text-alignment: center;
+}
+
+/* Playback controls */
+.playback-controls {
+    -fx-padding: 6 0 2 0;
+}
+
+.button {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 12;
+    -fx-background-radius: 9;
+    -fx-background-insets: 0;
+    -fx-border-radius: 9;
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-background-color: #b85237;
+    -fx-text-fill: #ffffff;
+}
+
+.primary-button:hover {
+    -fx-background-color: #9e402b;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #853523;
+}
+
+.secondary-button {
+    -fx-background-color: #e7eeea;
+    -fx-text-fill: #214b43;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #d6e3dc;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #c5d8ce;
+}
+
+.button:focused {
+    -fx-border-color: #193d39;
+}
+
+.button:disabled {
+    -fx-opacity: 0.45;
+    -fx-cursor: default;
+}
+
+/* Status and source credit */
+.attribution {
+    -fx-text-fill: #777469;
+    -fx-font-size: 10px;
+    -fx-text-alignment: center;
+}

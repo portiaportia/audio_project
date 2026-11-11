@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.music.controller.MusicPlayerController"
+            stylesheets="@music_player.css"
+            styleClass="player-scroll"
+            fitToWidth="true"
+            hbarPolicy="NEVER">
+    <content>
+        <VBox alignment="TOP_CENTER" styleClass="player-background">
+            <VBox alignment="TOP_CENTER" spacing="14"
+                  maxWidth="400" styleClass="player-card">
+                <StackPane maxWidth="200" minHeight="190"
+                           styleClass="artwork-frame">
+                    <ImageView fx:id="artwork"
+                               fitWidth="170" fitHeight="170"
+                               preserveRatio="true" smooth="true"/>
+                </StackPane>
+
+                <Label fx:id="artworkStatus" text=""
+                       wrapText="true" styleClass="artwork-status"/>
+
+                <VBox alignment="CENTER" spacing="6" maxWidth="330">
+                    <Label fx:id="titleLabel" text="Loading song..."
+                           wrapText="true" styleClass="song-title"/>
+                    <Label fx:id="artistLabel" text=""
+                           wrapText="true" styleClass="artist-name"/>
+                    <Label fx:id="albumLabel" text=""
+                           wrapText="true" styleClass="album-name"/>
+                </VBox>
+
+                <HBox alignment="CENTER" spacing="8" styleClass="playback-controls">
+                    <Button fx:id="playButton" text="Play"
+                            onAction="#playPreview" disable="true"
+                            styleClass="primary-button"/>
+                    <Button fx:id="stopButton" text="Stop"
+                            onAction="#stopPreview" disable="true"
+                            styleClass="secondary-button"/>
+                </HBox>
+
+                <Label text="Song previews and artwork provided courtesy of iTunes."
+                       wrapText="true" maxWidth="300"
+                       styleClass="attribution"/>
+            </VBox>
+        </VBox>
+    </content>
+</ScrollPane>
